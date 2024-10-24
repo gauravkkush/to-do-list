@@ -97,6 +97,8 @@ const handleSubmit = (event) => {
 	);
 	state.taskList.push({ ...input, id });
 	updatelocalStorage();
+	var myModal = new bootstrap.Modal(document.getElementById('addNewModal'));
+    	myModal.hide();
 };
 
 const openTask = (e) => {
