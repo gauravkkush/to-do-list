@@ -99,6 +99,10 @@ const handleSubmit = (event) => {
 	updatelocalStorage();
 	var myModal = new bootstrap.Modal(document.getElementById('addNewModal'));
     	myModal.hide();
+	document.getElementById("imageUrl").value = '';
+	document.getElementById("taskTitle").value = '';
+	document.getElementById("taskDescription").value = '';
+	document.getElementById("tags").value = '';
 };
 
 const openTask = (e) => {
